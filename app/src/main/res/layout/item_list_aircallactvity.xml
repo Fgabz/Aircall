@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/root_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_height="wrap_content">
+
+
+  <ImageView
+      android:id="@+id/call_type"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      tools:src="@drawable/circle_drawable_missed"
+      />
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_marginLeft="@dimen/spacing_large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+      <TextView
+          android:id="@+id/author_call"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="JP called"
+          />
+
+      <TextView
+          android:id="@+id/call_destination"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          android:layout_gravity="right"
+          tools:text="+434354232"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+      <TextView
+          android:id="@+id/aircall_line"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          tools:text="Via NYX OFFICE"
+          />
+
+      <TextView
+          android:id="@+id/time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/activity_horizontal_margin"
+          tools:text="at 15:58"
+          />
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

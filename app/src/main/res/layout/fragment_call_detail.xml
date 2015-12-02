@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout_detail_call"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.CallDetailFragment"
+    >
+
+  <TextView
+      android:id="@+id/author_call"
+      android:layout_marginBottom="@dimen/activity_horizontal_margin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="JP called"
+      />
+
+  <TextView
+      android:id="@+id/call_destination"
+      android:layout_marginBottom="@dimen/activity_horizontal_margin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="+434354232"
+      />
+
+  <TextView
+      android:id="@+id/aircall_line"
+      android:layout_marginBottom="@dimen/activity_horizontal_margin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Via NYX OFFICE"
+      />
+
+  <TextView
+      android:id="@+id/time"
+      android:layout_marginBottom="@dimen/activity_horizontal_margin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      tools:text="at 15:58"
+      />
+
+    <Button
+        android:id="@+id/archived_button"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/archive_call"
+        />
+</LinearLayout>
